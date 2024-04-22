@@ -1,0 +1,65 @@
+{
+    "case": {
+        "model": {
+            "input_size": 4,
+            "layers": [
+                {
+                    "number_of_neurons": 5,
+                    "activation_function": "sigmoid"
+                },
+                {
+                    "number_of_neurons": 9,
+                    "activation_function": "sigmoid"
+                },
+                {
+                    "number_of_neurons": 3,
+                    "activation_function": "softmax"
+                }
+            ]
+        },
+        "input": [
+        ],
+        "initial_weights": [
+            [
+                [0,0,0,0,0],
+                [0,0,0,0,0],
+                [0,0,0,0,0],
+                [0,0,0,0,0],
+                [0,0,0,0,0]
+            ],
+            [
+                [0,0,0,0,0,0,0,0,0],
+                [0,0,0,0,0,0,0,0,0],
+                [0,0,0,0,0,0,0,0,0],
+                [0,0,0,0,0,0,0,0,0],
+                [0,0,0,0,0,0,0,0,0],
+                [0,0,0,0,0,0,0,0,0]
+            ],
+            [
+                [0,0,0],
+                [0,0,0],
+                [0,0,0],
+                [0,0,0],
+                [0,0,0],
+                [0,0,0],
+                [0,0,0],
+                [0,0,0],
+                [0,0,0],
+                [0,0,0]
+            ]
+        ],
+        "target": [
+        ],
+        "learning_parameters": {
+            "learning_rate": 0.1,
+            "batch_size": 2,
+            "max_iteration": 2,
+            "error_threshold": 0.0
+        }
+    },
+    "expect": {
+        "stopped_by": "max_iteration",
+        "final_weights": [
+        ]
+    }
+}
